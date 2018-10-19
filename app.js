@@ -6,17 +6,18 @@ btn.appendChild(btnText);
 document.body.appendChild(btn);
 
 btn.addEventListener('click', function() {
-    
-
     for (i = 0; i < 5; i++) {
         var friendDiv = document.createElement('div');
         document.body.appendChild(friendDiv);
 
         friendDiv.className = 'friend'
 
-        var friendHeader = document.createElement('h3')
-        friendDiv.appendChild(friendHeader)
-        
+        var nameHeader = document.createElement('h3')
+        friendDiv.appendChild(nameHeader)
+
+        var divClass = document.getElementsByClassName('friend')
+        divClass[i].firstChild.textContent = friends[i]
+
     }
 
     for (i = 0; i < friends.length; i++){
