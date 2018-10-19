@@ -5,6 +5,10 @@ var btnText = document.createTextNode('Sing!')
 btn.appendChild(btnText);
 document.body.appendChild(btn);
 
+btn.addEventListener('click', function() {
+    console.log("I've been clicked")
+})
+
 for (i = 0; i < friends.length; i++){
     var friend = friends[i]; {
         for (s = 99; s > 0; s--) {
