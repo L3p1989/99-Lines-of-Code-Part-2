@@ -13,6 +13,10 @@ btn.addEventListener('click', function() {
         document.body.appendChild(friendDiv);
 
         friendDiv.className = 'friend'
+
+        var friendHeader = document.createElement('h3')
+        friendDiv.appendChild(friendHeader)
+        
     }
 
     for (i = 0; i < friends.length; i++){
