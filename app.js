@@ -1,4 +1,7 @@
 var friends = ['Steph', 'Julius', 'Glenn', 'Tyler', 'Jason'];
+var btn = document.createElement('button');
+
+document.body.appendChild(btn);
 
 for (i = 0; i < friends.length; i++){
     var friend = friends[i]; {
