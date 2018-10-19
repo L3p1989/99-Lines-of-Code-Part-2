@@ -10,13 +10,13 @@ btn.addEventListener('click', function() {
         var friendDiv = document.createElement('div');
         document.body.appendChild(friendDiv);
 
-        friendDiv.className = 'friend'
+        friendDiv.className = 'friend';
 
-        var nameHeader = document.createElement('h3')
-        friendDiv.appendChild(nameHeader)
+        var nameHeader = document.createElement('h3');
+        friendDiv.appendChild(nameHeader);
 
-        var divClass = document.getElementsByClassName('friend')
-        divClass[i].firstChild.textContent = friends[i]
+        var divClass = document.getElementsByClassName('friend');
+        divClass[i].firstChild.textContent = friends[i];
 
         var p = document.createElement('p')
         friendDiv.appendChild(p)
