@@ -18,6 +18,9 @@ btn.addEventListener('click', function() {
         var divClass = document.getElementsByClassName('friend')
         divClass[i].firstChild.textContent = friends[i]
 
+        var p = document.createElement('p')
+        friendDiv.appendChild(p)
+
     }
 
     for (i = 0; i < friends.length; i++){
