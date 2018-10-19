@@ -11,6 +11,8 @@ btn.addEventListener('click', function() {
     for (i = 0; i < 5; i++) {
         var friendDiv = document.createElement('div');
         document.body.appendChild(friendDiv);
+
+        friendDiv.className = 'friend'
     }
 
     for (i = 0; i < friends.length; i++){
