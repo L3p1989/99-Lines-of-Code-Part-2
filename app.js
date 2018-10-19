@@ -1,6 +1,8 @@
 var friends = ['Steph', 'Julius', 'Glenn', 'Tyler', 'Jason'];
 var btn = document.createElement('button');
+var btnText = document.createTextNode('Sing!')
 
+btn.appendChild(btnText);
 document.body.appendChild(btn);
 
 for (i = 0; i < friends.length; i++){
