@@ -6,6 +6,13 @@ btn.appendChild(btnText);
 document.body.appendChild(btn);
 
 btn.addEventListener('click', function() {
+    
+
+    for (i = 0; i < 5; i++) {
+        var friendDiv = document.createElement('div');
+        document.body.appendChild(friendDiv);
+    }
+
     for (i = 0; i < friends.length; i++){
         var friend = friends[i]; {
             for (s = 99; s > 0; s--) {
