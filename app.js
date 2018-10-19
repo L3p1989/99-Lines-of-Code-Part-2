@@ -3,23 +3,23 @@ var btn = document.createElement('button');
 var btnText = document.createTextNode('Sing!')
 
 btn.appendChild(btnText);
-document.body.appendChild(btn);
+document.body.appendChild(btn);//adds btn to body
 
 btn.addEventListener('click', function () {
     for (i = 0; i < 5; i++) {
         var friendDiv = document.createElement('div');
-        document.body.appendChild(friendDiv);
+        document.body.appendChild(friendDiv);//adds `friendDiv`s to body
 
-        friendDiv.className = 'friend';
+        friendDiv.className = 'friend';//assigns all divs a class name of 'friend'
 
         var nameHeader = document.createElement('h3');
-        friendDiv.appendChild(nameHeader);
+        friendDiv.appendChild(nameHeader);//adds nameHeader to friendDiv
 
         var divClass = document.getElementsByClassName('friend');
-        divClass[i].firstChild.textContent = friends[i];
+        divClass[i].firstChild.textContent = friends[i];//adds friends based on divClass array
 
         var p = document.createElement('p')
-        friendDiv.appendChild(p)
+        friendDiv.appendChild(p)//adds p to `friendDiv`s
 
         for (s = 99; s > 0; s--) {
             var minusOne = s - 1;
@@ -28,6 +28,6 @@ btn.addEventListener('click', function () {
             } else {
                 divClass[i].lastChild.textContent += ' 1 line of code in the file, 1 line of code; ' + friends[i] + ' strikes one out, clears it all out, no more lines of code in the file';
             };
-        };
+        };//adds textContent to `p`s
     };
 });
